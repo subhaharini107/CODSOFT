@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0,.4);
+    z-index: 100;
+}
+.header .navbar a{
+    color: #222;
+    text-decoration: none ;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 10px;   
+    border-radius: 5px;
+}
+.navbar a:hover{
+    background: #1990b1;
+    color: #fff;
+    border-radius: 15px;
+}
+.logo span{
+    color: #1990b1;
+}
+section{
+    padding: 10rem 9% 2rem;
+    margin-top: -40px;
+}
+.content{
+    background:whitesmoke;
+    height:100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .content h1{
+    font-size: 38px;
+ }
+.content h3{
+    color: #1990b1;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.content p{
+    max-width: 600px;
+    color: #222;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.btn{
+    height: 50px;
+    width: 140px;
+    border-radius: 8px;
+    background: #1990b1;
+    color: #fff;
+    outline: none;
+    border: 2px solid #1990b1;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e8e7e7;
+    height: 100%;
+    width: 00%;
+    z-index: -1;
+    transition: .3s;
+}
+.btn:hover::before{
+    width: 100%;
+}
+.btn:hover{
+    color:#1990b1;
+}
+.btn2{
+background: transparent;
+  color: #1990b1;
+  margin-right: 20px;
+  
+}
+.btn2::before{
+    background: #1990b1;
+}
+.btn2:hover{
+    color: #fff;
+}
+.icon {
+    position: absolute;
+    margin-left: 135px;
+    left: 0;
+    top: 75%;
+    font-size: 26px;
+}
+.icon a{
+    color: #2c2c2c;
+}
+.icon i{
+    padding: 10px 10px;
+    background: #1990b1;
+    border: 1px solid #1990b1;
+    margin-right: 5px;
+    border-radius: 25px;
+    transition: .3s;
+}
+.icon i:hover{
+    background: #fff;
+    color: #1990b1;
+}
